@@ -32,4 +32,13 @@ class RectangleAreaTest {
         double output = RectangleArea.square(p, k);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void whenP4K1Square1() {
+        int expected = 1;
+        int p = 4;
+        double k = 1;
+        double result = RectangleArea.square(p, k);
+        assertThat(result).isEqualTo(expected, withPrecision(0.01));
+    }
 }
